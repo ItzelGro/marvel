@@ -95,14 +95,14 @@ nav a {
     color: #ffffff;
     font-size: 16px;
     padding: 10px 25px;
-    background: linear-gradient(100deg, #FFC72C, #FFC72C);
+    background: linear-gradient(50deg, #ff2c2c, #ff2c2cc0);
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 nav a:hover {
-    color: #646A02;
+    color: #ffff25;
     border-style: solid;
     padding: 10px 10px;
     border-radius: 5px;
@@ -314,7 +314,7 @@ nav a:hover {
 
 
 /* Footer */
-
+/*
 footer {
     width: 100%;
     font-family: Raleway;
@@ -376,11 +376,85 @@ footer {
     margin-left: 5px;
     margin-bottom: 15px;
     font-family: raleway;
-}
+}*/
 
 .iconos-caracteristicas {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+}
+
+/*parte agregada*/
+
+footer {
+    width: 100%;
+    font-family: Raleway;
+}
+
+.footer-container {
+    width: 100%;
+    background: #f5f523;
+    color: #000000;
+}
+
+.footer-main {
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-main .footer-columna {
+    width: calc(100% / 3);
+    text-align: justify;
+}
+
+.footer-main .footer-columna:nth-child(2) {
+    padding: 0 20px;
+}
+
+.footer-main .footer-columna h3 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 32px;
+    color: #050505;
+    margin-bottom: 20px;
+}
+/*cuadro de texto*/
+.footer-main .footer-columna input[type="email"] {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #000000;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;}
+
+/*boton suscribirse*/
+.footer-main .footer-columna input[type="submit"] {
+    border-radius: 10px;
+    display: inline-block;
+    background: linear-gradient(50deg, #d32727, #f00b0bc0);
+    color: #ffffff;
+    padding: 10px 0px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer-main .footer-columna span p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.footer-main .footer-columna p {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
